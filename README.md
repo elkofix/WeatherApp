@@ -1,0 +1,3 @@
+# IntegrativeTaskIDiscreteStructuresIII
+# WeatherApp
+# WeatherApp
