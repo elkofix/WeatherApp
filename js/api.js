@@ -12,4 +12,4 @@ async function checkWeather(){
     var data = await response.json()
 
     console.log(data.coord)
-}s
+}
