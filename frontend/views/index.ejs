@@ -7,8 +7,36 @@
         <title>Document</title>
 </head>
 <body>
-    <%=data %>      
-</body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><img src="/assets/images/search.png" alt=""></button>
+        </div>
+    </div>
+    <div class="weather">
 
+        <img src="assets/images/<%=data.weather[0].main %>.png" class="weather-icon" alt="">
+        <h1 class="temp"><%=data.main.temp %>°</h1>
+        <h2 class="city"><%=data.name %></h2>
+        <div class="details">
+            <div class="col">
+                <img src="assets/images/humidity.png" alt="">
+                <div>
+                    <p class="humidity"><%=data.main.humidity %> %</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="assets/images/wind.png" alt="">
+                <div>
+                    <p class="wind"><%=data.wind.speed %>  Km/h</p>
+                    <p>Wind speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+<script type="module" src="/js/main.js"></script>
 
 </html>

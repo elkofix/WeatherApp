@@ -3,15 +3,16 @@ import { getWeather, getWeatherDefault } from '../controllers/apiController.js'
 import 'dotenv/config'
 const router = Router()
 
-router.get("/", (req, res) => { 
-  const data = getWeatherDefault(process.env.DEFAULT_CITY)
+router.get("/", async (req, res) => { 
+  const  city  = req.query.city || process.env.DEFAULT_CITY;
+  const data = await getWeatherDefault(city)
   res.render("index", {data}) 
 });
 
 
 router.post("/", async (req, res) => {
-  const data = await getWeather(req, res)
-  res.render("index", {data})
+  const { city } = req.body;
+  res.redirect(`/?city=${city}`);
 });
 
 
