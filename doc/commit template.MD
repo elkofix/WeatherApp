@@ -11,6 +11,7 @@
     - #NNN: número de tarea a la que pertenece el trabajo
     - BUG: cuando corrige un bug
     - DOC: si se está tocando documentación
+    - MRG: si se esta haciendo un merge
     - REF: si es solo una refactorización
     - IMG: si son retoques estéticos/de imagen
     - PRF: retoques de rendimiento

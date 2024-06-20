@@ -1,0 +1,39 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "A simple weather app",
+  "directories": {
+    "doc": "doc"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "nodemon backend/config/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elkofix/WeatherApp.git"
+  },
+  "keywords": [
+    "api",
+    "weather",
+    "js",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Alejandro Cordoba Erazo & Isabella Huila Ceron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elkofix/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/elkofix/WeatherApp#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
