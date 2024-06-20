@@ -1,5 +1,4 @@
 import 'dotenv/config'
-import { render } from 'ejs';
 const apiKey = process.env.API_KEY;
 
 
